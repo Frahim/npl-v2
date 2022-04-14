@@ -2,60 +2,23 @@ import React, { useState } from 'react'
 import {Form} from 'react-bootstrap'
 import logInLogo from '../assets/images/logo.svg'
 import logInLogo2 from '../assets/images/loginLogo2.png'
-import swal from 'sweetalert';
 
 
 
-function loginUser(credentials) {
-    return fetch('https://www.mecallapi.com/api/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(credentials)
-    })
-      .then(data => data.json())
-   }
-  
+
 const Login = () => {
-
-       // const classes = useStyles();
-        const [username, setUserName] = useState();
-        const [password, setPassword] = useState();
-      
-        const handleSubmit = async e => {
-          e.preventDefault();
-          const response = await loginUser({
-            username,
-            password
-          });
-          if ('accessToken' in response) {
-            swal("Success", response.message, "success", {
-              buttons: false,
-              timer: 2000,
-            })
-            .then((value) => {
-              localStorage.setItem('accessToken', response['accessToken']);
-              localStorage.setItem('user', JSON.stringify(response['user']));
-              window.location.href = "/";
-            });
-          } else {
-            swal("Failed", response.message, "error");
-          }
-    
-
   return (
       <div className="login  d-flex align-items-center justify-content-center">
           <div className="loginWrapper px-4 py-5">
               <img src={logInLogo} className="mx-auto d-flex" alt="" />
               <div className="loginForm text-center text-white my-5">
                   <h2>Please Sign In</h2>
-                  <Form className="text-start pt-5" onSubmit={handleSubmit}>
+                  <Form className="text-start pt-5" /*onSubmit={handleSubmit}*/>
                       <Form.Group className="mb-4" controlId="exampleForm.ControlInput1">
-                          <Form.Control className="emailBox" type="email" placeholder="name@example.com" id="email" name="email"onChange={e => setUserName(e.target.value)}/>
+                          <Form.Control className="emailBox" type="email" placeholder="name@example.com" id="email" name="email" /*onChange={e => setUserName(e.target.value)}*//>
                       </Form.Group>
                       <Form.Group className="mb-4 position-relative" controlId="exampleForm.ControlInput2">
-                          <Form.Control className="passwordBox" type="password" placeholder="Password" id="password" name="password" onChange={e => setPassword(e.target.value)}/>
+                          <Form.Control className="passwordBox" type="password" placeholder="Password" id="password" name="password" /*onChange={e => setPassword(e.target.value)}*//>
                           <div className='position-absolute eyeIcon '>
                               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path
@@ -84,6 +47,6 @@ const Login = () => {
       </div>
   );
 }
-}
+
 
 export default Login; 

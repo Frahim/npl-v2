@@ -3,7 +3,8 @@ import React from "react";
 function Carbody(){
     return(
         <>
-        <div className="cardBodyWrapper d-flex  j-space-between">
+        <div className="cardBodyWrapper">
+            <div className="scrollWrwpper homecustome d-flex  j-space-between">
             <div className="cardBord">
                 <div className="cardBordHeader">
                     <ul className="d-flex list-unstyled j-space-between">
@@ -647,7 +648,7 @@ function Carbody(){
                     </ul>
                 </div>
             </div>
-            
+            </div>
         </div>
         </>
     )

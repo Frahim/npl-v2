@@ -149,8 +149,8 @@ const Predictions = () => {
                   </div>
               </div>
 
-              <div className="menuWrapper filtermenu mt-5">
-                  <div className="d-flex align-items-center gap-4 j-space-between">
+              <div className="menuWrapper filtermenu mt-5 mb-5">
+                  <div className="d-flex align-items-center gap-4">
                       <Button className="disableBtn" variant="primary" size="lg" disabled>
                           BestBET
                       </Button>
@@ -225,8 +225,8 @@ const Predictions = () => {
                   </div>
               </div>
 
-              <div>
-                  <div className="gameInfo section-padding">
+              <div className='scrollWrwpper'>
+                  <div className="gameInfo">
                       <div className="gameInfoWrapper d-flex gap-5 flex-wrap justify-content-between w-100">
                           <div className="gameInfoItem mb-4">
                               <div className="d-flex flex-column align-items-center">
@@ -597,6 +597,28 @@ const Predictions = () => {
                               </div>
                           </div>
 
+                          <div className="gameInfoItem mb-4">
+                              <div className="d-flex flex-column align-items-center">
+                                  <div className="infoTop-blue d-flex align-items-center justify-content-center">
+                                      <h4 className="infoTopContent text-white ">STRIKEOUT</h4>
+                                  </div>
+                                  <div>
+                                      <div className="infoBottom d-flex align-items-center justify-content-between px-3">
+                                          <h4 className="text-red fs-18 position-relative">
+                                              <span className="position-absolute bottom-arrow">
+                                                  <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                      <path d="M0 0L5 5L10 0H0Z" fill="#FF4E3E" />
+                                                  </svg>
+                                              </span>
+                                              4
+                                          </h4>
+
+                                          <h2 className="fs-48 text-white">29</h2>
+                                          <h3 className="fs-4 fw-light text-white">%</h3>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
                           <div className="gameInfoItem mb-4">
                               <div className="d-flex flex-column align-items-center">
                                   <div className="infoTop-blue d-flex align-items-center justify-content-center">
