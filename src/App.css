@@ -954,3 +954,143 @@ button.whiteBtn {
     width: 122px !important;
   }
  }
+
+ /*
+ 404 page 
+ */
+
+ .notFwrapper {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;  
+  text-align: center;
+}
+
+/*
+Betting feed
+*/
+.gameTitle{
+  font-family: 'Industry';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+color: #B9B7DA;
+}
+
+/*
+Tabil
+*/
+
+
+.optiontb {
+  display: flex;
+  min-width: 827px !important;
+}
+
+.headerRow .hRow {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;  
+  min-width: 74px;
+  color: #7371A0;
+    background: #1E1E39;
+    padding: 20px 12px;
+    border-right: 1px solid #000;
+    width: 100%;
+}
+.bodyRow .hRow {
+  font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;    
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    min-width: 74px;
+    color: #7371A0;
+    height: 52px;
+    padding: 10px 5px;
+    width: 100%;
+    border-right: 1px solid #1E1E39;
+}
+.bodyRow {border-bottom: 1px solid #1e1e39;}
+.id {
+  max-width: 74px;    
+}
+.desc {
+  max-width: 124px;
+  min-width: 124px !important;
+}
+.hRow.meta {
+  min-width: 492px;
+}
+.hRow.meta {
+  min-width: 492px;
+  padding: 20px 0;
+}
+.inhRow {
+  min-width:67px;
+  width: 100%;
+  margin-top: 7px;
+  border-top: 1px solid #000;
+  padding-top: 7px;
+}
+.hRow.bestbet {
+    width: 100%;
+    min-width: 106px;
+    padding: 20px 0 0;
+}
+.inhRowB {
+  min-width: 70.3px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #7371A0;
+  height: 52px;
+  padding: 10px 5px;
+  width: 100%;
+  border-right: 1px solid #1E1E39;
+}
+.bestbetRow{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #7371A0;
+  height: 52px;
+}
+.inhRowbe{
+  min-width: 36px;
+  width: 100%;
+  border-right: 1px solid #1E1E39;
+  height: 52px;
+  padding-top: 10px;
+}
+.inhRowbestbet {
+  min-width: 36px;
+  width: 100%;
+  margin-top: 7px;
+  border-top: 1px solid #000;
+  padding-top: 7px;
+}
+.mainwrapTabil {
+  border: 1px solid #1E1E39;
+  width: 100%;
+  display: inline-table;
+}
+
+.textGreen{color: #C0FF2C !important;}
+.bgGreen{background:  #C0FF2C !important;color: #000 !important;}

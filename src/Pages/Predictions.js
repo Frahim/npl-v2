@@ -1,6 +1,7 @@
 import React from 'react'
 import { Carousel, Button, Dropdown } from "react-bootstrap";
 import { useState } from 'react';
+import Navigation from '../components/Navigation';
 //import '../assets/CSS/predict.css'
 
 const Predictions = () => {
@@ -12,6 +13,7 @@ const Predictions = () => {
   };
   return (
       <>     
+       <Navigation />
       <div className='predictionWrapper'>            
       <div className='predictionContentWrappper'>  
               <div className='hh'>

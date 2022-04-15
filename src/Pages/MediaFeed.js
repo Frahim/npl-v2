@@ -2,6 +2,7 @@ import React from 'react';
 import {Table} from 'react-bootstrap';
 import { Carousel, Button, Dropdown } from "react-bootstrap";
 import { useState } from 'react';
+import Navigation from '../components/Navigation';
 const MediaFeed = () => {
     const [index, setIndex] = useState(0);
 
@@ -10,8 +11,9 @@ const MediaFeed = () => {
     };
   return (
       <>
+       <Navigation />
         <div className='predictionWrapper'>            
-        <div className='predictionContentWrappper'>         
+        <div className='predictionContentWrappper'>        
     
             <div className='hh'>
                         <div className="d-flex headerItemWrapper bg-black">
